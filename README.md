@@ -275,7 +275,7 @@ should be an Intra
 A complete start command could be:
 
 ```
-python3 fastllapp.py -c tastll.json
+python3 fastllapp.py -c config.json
 ```
 
 ## Media playback
