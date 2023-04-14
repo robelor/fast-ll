@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Another Stream",
+    "stream": "hik1",
+    "type": "RTSP",
+    "input": "rtsp://user:pass@192.168.0.89:554/h264/ch1/main/av_stream",
+    "targetFps": "10",
+    "segmentDuration": "1",
+    "fragmentDuration": "0.1",
+    "intraInterval": "10",
+    "serverSideRepresentationSwitching": true,
+    "saveStats": false,
+    "qualities": {
+      "video": [
+        {
+          "targetWidth": "640",
+          "targetBitrate": "250"
+        },
+        {
+          "targetWidth": "640",
+          "targetBitrate": "500"
+        },
+        {
+          "targetWidth": "640",
+          "targetBitrate": "1000"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Another Stream",
+    "stream": "hik2",
+    "type": "RTSP",
+    "input": "rtsp://user:pass@10.0.0.96:554/axis-media/media.amp",
+    "targetFps": "10",
+    "segmentDuration": "1",
+    "fragmentDuration": "0.1",
+    "intraInterval": "10",
+    "saveStats": false,
+    "qualities": {
+      "video": [
+        {
+          "targetWidth": "640",
+          "targetBitrate": "250"
+        },
+        {
+          "targetWidth": "640",
+          "targetBitrate": "500"
+        },
+        {
+          "targetWidth": "640",
+          "targetBitrate": "1000"
+        }
+      ]
+    },
+    "targetLatency": "0.2"
+  }
+]

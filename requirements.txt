@@ -1,0 +1,8 @@
+
+fastapi~=0.78.0
+python-multipart
+ffmpeg-python
+loguru~=0.6.0
+uvicorn~=0.17.6
+starlette~=0.19.1
+pandas

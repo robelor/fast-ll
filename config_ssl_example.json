@@ -1,0 +1,10 @@
+{
+  "verbose": true,
+  "host": "fll.exmaple.com",
+  "port": 8000,
+  "streams": "streams.json",
+  "sslKeyFile": "/path/to/cert.key",
+  "sslCertFile": "/path/to/cert.pem",
+  "timeDisplacement": 0,
+  "waitForAbsentSegment": true
+}
