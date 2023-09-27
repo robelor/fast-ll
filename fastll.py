@@ -271,9 +271,13 @@ async def ssss_stream_selection(stream: str, adaptation_set_id: int):
 async def outgoing_data(stream_data: str, name: str):
     request_incoming_time = time.time()
 
-    stream_components = stream_data.split("-")
-    stream = stream_components[0]
-    request_client = stream_components[1]
+    if "-" in stream_data:
+        stream_components = stream_data.split("-")
+        stream = stream_components[0]
+        request_client = stream_components[1]
+    else:
+        stream = stream_data
+        request_client = "unknown"
 
     if stream in conf_streams:
         # stream
