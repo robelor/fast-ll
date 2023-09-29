@@ -429,16 +429,19 @@ async def incoming_data(request: Request, stream: str, name: str):
 
         else:
             # other type of objects can be read wholly
-            req = await request.receive()
-
             if name.startswith("manifest"):
+                req = await request.receive()
                 fll_stream.manifest.set_manifest(req["body"].decode())
+                logger.debug(f"Manifest: {name}")
 
             if name.startswith("init"):
                 stream_id = int(re.search(stream_pattern, name).group(1))
+                # This sleep is required for some cameras not having an empty init segment
+                time.sleep(0.2)
+                req = await request.receive()
 
                 if "body" in req:
-                    logger.debug(f"Init segment body: {req['body']}")
+                    logger.debug(f"Init segment: {name}")
                     fll_stream.init_segments[stream_id].set_initial_segment(req["body"])
                 else:
                     logger.warning("Init segment has no body!!!")
