@@ -4,6 +4,23 @@ Fast-ll is a LL-DASH web server. It handles segment PUT and GET requests, so
 they can arrive even before the actual segments have arrived. Then, it uses
 HTTP chunked transfer to serve segments as they arrive.
 
+Please considere reference this work if this software if useful for you:
+```BibTeX
+@article{BELDA2023109961,
+title = {A DASH server-side delay-based representation switching solution to improve the quality of experience for low-latency live video streaming},
+journal = {Computer Networks},
+volume = {235},
+pages = {109961},
+year = {2023},
+issn = {1389-1286},
+doi = {https://doi.org/10.1016/j.comnet.2023.109961},
+url = {https://www.sciencedirect.com/science/article/pii/S1389128623004061},
+author = {Román Belda and Pau Arce and Juan Carlos Guerri and Ismael {de Fez}},
+keywords = {DASH low latency, Live streaming, Testbed, Multimedia software open source, Performance evaluation},
+abstract = {This work addresses the integration of real-time transmission systems, including IP cameras and production systems (like OBS or vMix), that use protocols such as RTSP (Real Time Streaming Protocol) or SRT (Secure Reliable Transport), with content distribution technology based on LL-DASH (Low Latency DASH -Dynamic Adaptive Streaming over HTTP-), taking advantage of the fact that DASH offers significant well-known advantages for content distribution over the Internet and via CDNs (Content Delivery Networks). Considering the limitations of the LL-DASH standard regarding the adaptation to network conditions, this paper proposes a new solution called Server-Side Representation Switching (SSRS). SSRS uses an approach based on the server measuring the delay in the requests made by clients, whose variation may be due to a decrease in bandwidth, as occurs in Wi-Fi networks with a high number of clients. To evaluate the effectiveness of the proposed solution, a testbed has been developed that allows the performance evaluation of both the LL-DASH system and the solution based on server-side decision-making. In addition, the developed solution has been compared with known algorithms (L2A and LoL+) integrated into the Dash.js player. The results show that the Server-Side Representation Switching solution offers a good trade-off between the transmitted quality and the final delay measured at the client, compared to the other algorithms evaluated. Moreover, it holds the advantage of being straightforward to implement and does not require any modifications to the players used. • Networks   • Network performance evaluation   • Network performance analysis.}
+}
+```
+
 ## Fast-ll request diagram
 
 ```mermaid
