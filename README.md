@@ -4,7 +4,7 @@ Fast-ll is a LL-DASH web server. It handles segment PUT and GET requests, so
 they can arrive even before the actual segments have arrived. Then, it uses
 HTTP chunked transfer to serve segments as they arrive.
 
-Please considere reference these works if this software if useful for you:
+Please consider referencing these works if this software is useful for you:
 ```BibTeX
 @article{BELDA2023109961,
 title = {A DASH server-side delay-based representation switching solution to improve the quality of experience for low-latency live video streaming},
