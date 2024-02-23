@@ -21,7 +21,22 @@ abstract = {This work addresses the integration of real-time transmission system
 }
 ```
 ```BibTeX
-@inproceedings{10.1145/3551663.3558674, author = {Belda, Rom\'{a}n and Arce, Pau and de Fez, Ismael and Guerri, Juan Carlos}, title = {Performance Evaluation and Testbed for Delivering SRT Live Content using DASH Low Latency Streaming Systems}, year = {2022}, isbn = {9781450394833}, publisher = {Association for Computing Machinery}, address = {New York, NY, USA}, url = {https://doi.org/10.1145/3551663.3558674}, doi = {10.1145/3551663.3558674}, abstract = {The work presented in this paper focuses on the implementation of a testbed for the evaluation of content distribution systems using LL-DASH (Low Latency DASH -Dynamic Adaptive Streaming over HTTP-) and devices that provide real-time sources or servers using real-time protocols, such as RTSP (Real Time Streaming Protocol) or SRT (Secure Reliable Transport). These protocols are widely used by IP (Internet Protocol) cameras or by production and transmission systems, such as OBS Studio or vMix. The objective is to show the necessary processes in detail (so they can be reproduced in future works related to low latency services) and to minimize the end-to-end delay, obtaining values in the order of 2 seconds or less. The implementation has been done using FFmpeg software, players like Dash.js or Shaka-Player and implementing a Python web server with LL-DASH support to optimize the transmission delay.}, booktitle = {Proceedings of the 19th ACM International Symposium on Performance Evaluation of Wireless Ad Hoc, Sensor, \& Ubiquitous Networks}, pages = {115–121}, numpages = {7}, keywords = {DASH low latency, live streaming, multimedia software open source, testbed}, location = {Montreal, Quebec, Canada}, series = {PE-WASUN '22} }
+@inproceedings{10.1145/3551663.3558674,
+author = {Belda, Rom\'{a}n and Arce, Pau and de Fez, Ismael and Guerri, Juan Carlos},
+title = {Performance Evaluation and Testbed for Delivering SRT Live Content using DASH Low Latency Streaming Systems},
+year = {2022},
+isbn = {9781450394833},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3551663.3558674},
+doi = {10.1145/3551663.3558674},
+abstract = {The work presented in this paper focuses on the implementation of a testbed for the evaluation of content distribution systems using LL-DASH (Low Latency DASH -Dynamic Adaptive Streaming over HTTP-) and devices that provide real-time sources or servers using real-time protocols, such as RTSP (Real Time Streaming Protocol) or SRT (Secure Reliable Transport). These protocols are widely used by IP (Internet Protocol) cameras or by production and transmission systems, such as OBS Studio or vMix. The objective is to show the necessary processes in detail (so they can be reproduced in future works related to low latency services) and to minimize the end-to-end delay, obtaining values in the order of 2 seconds or less. The implementation has been done using FFmpeg software, players like Dash.js or Shaka-Player and implementing a Python web server with LL-DASH support to optimize the transmission delay.},
+booktitle = {Proceedings of the 19th ACM International Symposium on Performance Evaluation of Wireless Ad Hoc, Sensor, \& Ubiquitous Networks},
+pages = {115–121},
+numpages = {7},
+keywords = {DASH low latency, live streaming, multimedia software open source, testbed},
+location = {Montreal, Quebec, Canada},
+series = {PE-WASUN '22} }
 ```
 
 ## Fast-ll request diagram
